@@ -1,0 +1,34 @@
+{
+  "version": "2.0",
+  "templates": [
+    {
+      "name": "billing-endpoint",
+      "tags": {
+        "type": "backend",
+        "area/billing": "v1",
+        "security": "admin-only",
+        "compliance/gdpr": "relevant",
+        "monitored": "true"
+      }
+    },
+    {
+      "name": "public-api-endpoint",
+      "tags": {
+        "type": "backend",
+        "security": "public",
+        "rate-limited": "true",
+        "monitored": "true",
+        "cors": "enabled"
+      }
+    },
+    {
+      "name": "cron-job",
+      "tags": {
+        "type": "background",
+        "monitored": "true",
+        "retry-on-failure": "3",
+        "alert-on-error": "pagerduty"
+      }
+    }
+  ]
+}

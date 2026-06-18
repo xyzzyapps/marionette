@@ -1,0 +1,16 @@
+{
+  "version": "2.0",
+  "index": {
+    "exclude": [
+      "node_modules/**",
+      "__pycache__/**",
+      ".git/**",
+      "target/**",
+      "vendor/**",
+      ".svn/**"
+    ]
+  },
+  "output": {
+    "format": "json"
+  }
+}

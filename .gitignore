@@ -1,0 +1,11 @@
+*.exe
+*.exe~
+*.db
+*.db-journal
+*.test
+.env
+# marionette binary
+marionette.exe
+# test database artifacts
+.test.db
+.test.db-journal
